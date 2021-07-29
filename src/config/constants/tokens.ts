@@ -36,6 +36,12 @@ const tokens = {
     address: {
       56: '0x768d221e81524de52841aed976370b2e4f990416'
     },
-  }, 
+  },
+  wmmp: {
+    symbol: 'MMP',
+    address: {
+      56: '0x422d0a431d8fb752e3697e90ba04b3324ea0cb4a'
+    },
+  },
 }
 export default tokens

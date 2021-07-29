@@ -9,7 +9,7 @@ const Home = () => {
   };
   const mmpBalance = useTokenBalance(
     "0x9c9007950c2c2B40618D2511d79EB20951D8655e",
-    tokens.mmp.address[56]
+    tokens.wmmp.address[56]
   );
 
   return (
