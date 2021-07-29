@@ -1,38 +1,61 @@
-.App {
+.app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: rgb(240,223,230);
+  background: radial-gradient(circle, rgba(240,223,230,1) 0%, rgba(148,187,233,1) 100%);
+  color: rgb(51, 51, 51);
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #080808;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-root {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
+
+.input-address {
+  width: 80%;
+  padding: 15px;
+  padding-left: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.753);
+  border:none
+}
+.input-address:focus {
+  outline: none;
+}
+
+.card {
+  will-change: transform;
+  backface-visibility: hidden;
+  background: linear-gradient(
+    120deg
+    , rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(10px);
+  box-shadow: rgb(0 0 0 / 1%) 16px 1px 14px;
+  padding: 1rem 1rem 1rem;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+
+table{
+  width: 100%;
+  text-align: left;
+}
+
+th{
+  text-transform: uppercase;
+}
+
+td{
+  padding: 0.75rem 1rem;
+}
+
+

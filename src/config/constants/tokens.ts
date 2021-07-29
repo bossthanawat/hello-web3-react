@@ -1,8 +1,4 @@
 const tokens = {
-  bnb: {
-    symbol: 'BNB',
-    projectLink: 'https://www.binance.com/',
-  },
   cake: {
     symbol: 'CAKE',
     address: {
@@ -16,13 +12,6 @@ const tokens = {
     address: {
       56: '0xe9e7cea3dedca5984780bafc599bd69add087d56'
     },
-  },
-  dop: {
-    symbol: 'DOP',
-    address: {
-      56: '0x844fa82f1e54824655470970f7004dd90546bb28'
-    },
-    projectLink: 'https://dopple.finance/',
   },
   wad: {
     symbol: 'WAD',
@@ -38,7 +27,7 @@ const tokens = {
     },
   },
   wmmp: {
-    symbol: 'MMP',
+    symbol: 'WMMP',
     address: {
       56: '0x422d0a431d8fb752e3697e90ba04b3324ea0cb4a'
     },

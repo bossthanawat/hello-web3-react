@@ -1,9 +1,7 @@
-import BigNumber from 'bignumber.js'
-import { BIG_TEN } from './bigNumber'
+import web3 from 'web3'
 
-
-export const getBalanceAmount = (amount: BigNumber, decimals = 18) => {
-  return new BigNumber(amount).dividedBy(BIG_TEN.pow(decimals))
+export const getBalanceAmount = (amount: string) => {
+  return Number(web3.utils.fromWei(amount))
 }
 
 export const formatNumber = (number: number, minPrecision: number = 3, maxPrecision: number = 3) => {
@@ -13,3 +11,7 @@ export const formatNumber = (number: number, minPrecision: number = 3, maxPrecis
   }
   return number.toLocaleString(undefined, options)
 }
+
+export const displayAmount = (value: string, minPrecision: number = 3, maxPrecision: number = 3): string => {
+  return formatNumber(getBalanceAmount(value),minPrecision,maxPrecision);
+};
